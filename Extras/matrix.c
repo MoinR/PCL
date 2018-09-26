@@ -56,7 +56,20 @@ void main(){
         }
     }
 
-
+    printf("Multiplication of Matrix : \n");
+    for(i = 0; i<3; i++){
+        for(j = 0; j<3; j++){
+            for(k=0; k<3; k++){
+                m[i][j] = m[i][j] + x[i][k] * y[k][i];
+            }
+        }
+    }
+    for(i = 0; i<3; i++){
+        for(j = 0; j<3; j++){
+        printf("%d \t",m[i][j] );
+        }
+        printf("\n");
+    }
 
 }
 

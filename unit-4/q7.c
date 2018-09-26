@@ -43,20 +43,22 @@ void main(){
         printf("\n");
     }
 
-    printf("Summation of Matrix : \n");
+
+
+    printf("Multiplication of Matrix : \n");
     for(i = 0; i<3; i++){
         for(j = 0; j<3; j++){
-        printf("%d \t",z[i][j] );
+            for(k=0; k<3; k++){
+                m[i][j] = m[i][j] + x[i][k] * y[k][i];
+            }
+        }
+    }
+    for(i = 0; i<3; i++){
+        for(j = 0; j<3; j++){
+        printf("%d \t",m[i][j] );
         }
         printf("\n");
     }
-    for(i = 0; i<3; i++){
-        for(j = 0; j<3; j++){
-         m[i][j] = 0;
-        }
-    }
-
-
 
 }
 

@@ -19,6 +19,7 @@ int isArmstrong(int num){
         }
         return 0;
 }
+
 int isPerfect(int num){
     int rem, sum,onum;
      onum = num;

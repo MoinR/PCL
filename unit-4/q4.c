@@ -7,10 +7,11 @@ void main(){
     printf("Enter number of elements : ");
     scanf("%d",&n);
     int ar[n];
-    for(int i = 1; i <= n; i++){
+    for(int i = 0; i < n; i++){
         printf("Enter element : ");
         scanf("%d",&ar[i]);
     }
+
     // Printing array without sorting
     printf("\nElements (Without sorting): ");
     for(int i = 1; i <= n; i++){
@@ -24,16 +25,20 @@ void main(){
     }
     printf("\nElements (sorted): ");
     // Using Bubble sort algorithm
-    for(i = 0; i<n; i++){
-        for(j = 0; j < n-i; j++){
-            // Swapping values
-            if(ar[j] > ar[j+1]){
-                tmp   = ar[j];
+
+    for(i=0; i<n; i++){
+        for(j=0; j<n-i; j++){
+            if(ar[j+1] < ar[j]){
+                tmp = ar[j];
                 ar[j] = ar[j+1];
                 ar[j+1] = tmp;
             }
         }
     }
+
+
+
+
     // Printing Sorted Array
 
     for(int i = 1; i <= n; i++){
