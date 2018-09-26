@@ -2,6 +2,7 @@
 #define A 3
 void main(){
     int x[A][A],y[A][A],z[A][A],m[A][A] , i,k,j;
+
     // First Matrix
     printf("Enter First Matrix : \n");
     for(i = 0; i<3; i++){
@@ -11,6 +12,7 @@ void main(){
         }
     }
     printf("Enter Second Matrix : \n");
+
     // second matrix
     for(i = 0; i<3; i++){
         for(j = 0; j<3; j++){
